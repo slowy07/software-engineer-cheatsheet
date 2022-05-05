@@ -1,2 +1,4 @@
 # software-egineer-cheatsheet
-software engineer interview reference
+interview question about software egineering
+
+- [Architecture](architecture/README.md)
