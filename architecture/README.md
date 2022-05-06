@@ -8,6 +8,13 @@
   - [good architecture principles](#good-architecture-principles)
   - [separation of concerns](#separation-of-concerns)
   - [SOLID](#solid)
+  - [Law of dementer](#law-of-dementer)
+  - [Don't repeat yourself (DRY](#dont-repeat-yourself-dry)
+  - [Keep it simple, stupid (KISS)](#keep-it-simple-stupid-kiss)
+  - [You aren't gonna need it](#you-arent-gonna-need-it)
+  - [Compositor over inheritance](#compositor-over-inheritance)
+  - [Naming convention](#naming-convention)
+  - [Usefull links](#usefull-links)
 
 ## what is software architecture
 
@@ -83,3 +90,72 @@ In software engineering, SOLID is a mnemonic acronym for five design principles 
 - The interface segregation principle: "Many client-specific interfaces are better than one general-purpose interface."
 - The dependency inversion principle: "Depend upon abstractions, __[not]__ concretions."
 
+
+## Law of dementer
+
+The Law of Demeter (LoD) or principle of least knowledge is a design guideline for developing software, particularly object-oriented programs. In its general form, the LoD is a specific case of loose coupling. The guideline was proposed by Ian Holland at Northeastern University towards the end of 1987, and can be succinctly summarized in each of the following ways:
+- Each unit should have only limited knowledge about other units: only units *closely* related to the current unit
+- Eah unit should only talk to its friends; don't talk to strangers
+- Only yalk to your immediate friends
+
+
+the fundamental notion is that a given object should assume as little as possible about the structure or properties of anything else (including its subcomponets), in accordance with the principle of *information hiding*. it may be viewed as corollary to the **principle of least privilege**, which dictates that a module posses only the information and resource necessary for its legitimate purpose.
+
+
+It is so named for its origin in the Demeter Project, an adaptive programming and aspect-oriented programming effort. The project was named in honor of Demeter, “distribution-mother” and the Greek goddess of agriculture, to signify a bottom-up philosophy of programming which is also embodied in the law itself.
+
+
+## Don't repeat yourself (DRY
+
+is a principle of software development aimed at reducing repetition of software patterns,replacing it with abstractions or using data normalization to avoid redundancy.
+
+
+The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system". The principle has been formulated by Andy Hunt and Dave Thomas in their book The Pragmatic Programmer. They apply it quite broadly to include "database schemas, test plans, the build system, even documentation". When the DRY principle is applied successfully, a modification of any single element of a system does not require a change in other logically unrelated elements. Additionally, elements that are logically related all change predictably and uniformly, and are thus kept in sync. Besides using methods and subroutines in their code, Thomas and Hunt rely on code generators, automatic build systems, and scripting languages to observe the DRY principle across layers.
+
+
+## Keep it simple, stupid (KISS)
+
+KISS, an acronym for keep it simple, stupid, is a design principle noted by the U.S. Navy in 1960. The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided. The phrase has been associated with aircraft engineer Kelly Johnson. The term "KISS principle" was in popular use by 1970. Variations on the phrase include: "Keep it simple, silly", "keep it short and simple", "keep it short and sweet", "keep it simple and straightforward". "keep it small and simple", "keep it simple, soldier", "keep it simple, sailor", or "keep it sweet and simple".
+
+## You aren't gonna need it
+
+is a principle which arose from extreme programming (XP) that states a programmer should not add functionality until deemed necessary. XP co-founder Ron Jeffries has written: "Always implement things when you actually need them, never when you just foresee that you need them." Other forms of the phrase include "You aren't going to need it" (YAGTNI) and "You ain't gonna need it" (YAGNI).
+
+
+YAGNI is a principle behind the XP practice of "do the simplest thing that could possibly work" (DTSTTCPW). It is meant to be used in combination with several other practices, such as continuous refactoring, continuous automated unit testing, and continuous integration. Used without continuous refactoring, it could lead to disorganized code and massive rework, known as technical debt.[citation needed] YAGNI's dependency on supporting practices is part of the original definition of XP.
+
+## Compositor over inheritance
+
+[image](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/UML_diagram_of_composition_over_inheritance.svg/800px-UML_diagram_of_composition_over_inheritance.svg.png)
+
+
+Composition over inheritance (or composite reuse principle) in object-oriented programming (OOP) is the principle that classes should achieve polymorphic behavior and code reuse by their composition (by containing instances of other classes that implement the desired functionality) rather than inheritance from a base or parent class. This is an often-stated principle of OOP, such as in the influential book Design Patterns (1994).
+
+
+**Basic**
+
+
+An implementation of composition over inheritance typically begins with the creation of various interfaces representing the behaviors that the system must exhibit. Interfaces enable polymorphic behavior. Classes implementing the identified interfaces are built and added to business domain classes as needed. Thus, system behaviors are realized without inheritance.
+
+In fact, business domain classes may all be base classes without any inheritance at all. Alternative implementation of system behaviors is accomplished by providing another class that implements the desired behavior interface. A class that contains a reference to an interface can support implementations of the interface—a choice that can be delayed until runtime.
+
+
+## Naming convention
+
+In computer programming, a naming convention is a set of rules for choosing the character sequence to be used for identifiers which denote variables, types, functions, and other entities in source code and documentation.
+
+Reasons for using a naming convention (as opposed to allowing programmers to choose any character sequence) include the following:
+
+- To reduce the effort needed to read and understand source code
+- To enable code reviews to focus on issue more important than syntax and naming standards
+- To enable code quality on significant issue other than syntax and style preferences
+
+The choice of naming conventions can be an enormously controversial issue, with partisans of each holding theirs to be the best and others to be inferior. Colloquially, this is said to be a matter of dogma. Many companies have also established their own set of conventions.
+
+## Usefull links
+
+1. [Non functional requirements](https://www.altexsoft.com/blog/non-functional-requirements/)
+2. [Separation of concerns in software design](https://nalexn.github.io/separation-of-concerns/)
+3. [OOP design principles: The Principle of least knowledge](https://sergeyzhuk.me/2016/12/11/law-of-demeter/)
+4. [Single responsibility principle](https://www.toptal.com/software/single-responsibility-principle)
+5. [Software architecture guide](https://martinfowler.com/architecture/)
