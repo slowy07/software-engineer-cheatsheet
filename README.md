@@ -1,4 +1,4 @@
-# software-egineer-cheatsheet
+# software-engineer-cheatsheet
 interview question about software egineering
 
 - [Architecture](architecture/README.md)
