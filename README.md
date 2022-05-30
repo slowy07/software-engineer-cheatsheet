@@ -5,3 +5,10 @@ some of the topics discussed based on my interview experience as a software engi
 - [Architecture](architecture/README.md)
 - [CI-CD](ci-cd/README.md)
 - [code quality](code-quality/README.md)
+- [communications](communications-protocols/README.md)
+- [performance](performance)
+
+
+## coding question
+
+- [Google](Google)
