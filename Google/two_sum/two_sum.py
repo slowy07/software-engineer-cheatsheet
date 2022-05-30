@@ -6,4 +6,3 @@ class SolveProblem:
 
             if remaining in seen:
                 return [i, seen[remaining]]
-

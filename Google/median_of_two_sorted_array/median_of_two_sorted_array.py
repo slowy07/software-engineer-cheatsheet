@@ -5,4 +5,6 @@ class ProblemSolve:
         length = len(merge_list)
         if length % 2:
             return merge_list[int((length + 1) / 2) - 1]
-        return (merge_list[int(length / 2) - 1] + merge_list[int((length / 2) + 1) - 1]) / 2
+        return (
+            merge_list[int(length / 2) - 1] + merge_list[int((length / 2) + 1) - 1]
+        ) / 2
